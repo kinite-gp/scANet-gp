@@ -1,4 +1,4 @@
-from app import check,banner,tinput
+from library import check,banner,tinput
 from os import system
 
 check.dependency()
