@@ -16,7 +16,9 @@ def menu():
         ["3","Choose Scan"],
         ["4","About"],
         ["5","Help"],
-        ["0","Setting"]
+        ["0","Setting"],
+        ["",""],
+        ["Q","Exit"]
     ]
     menu = tabulate(table,headers=["---","--------------------------"])
     print(menu)
