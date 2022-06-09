@@ -1,0 +1,66 @@
+scANet
+Network scanner for website :
+Easy and fast for language python
+
+
+
+Menu
+    Fast scan
+         Run mini prosses
+    Full scan
+         Run full prosses 
+    Choose scan
+         Choose & run one prosses
+    About
+         GitHub.link
+         Site.link
+    Help
+         GitHub.link
+    Setting
+         Theme
+         Proxy
+         Sounds
+         Sea logs
+
+Directory's
+     Logs
+         Out
+             Save out put default
+         Log
+             Save error and msg log
+     App
+         Library
+             Directory library & function
+             Settings
+                 settings.json
+             Sounds
+                 Directory sounds app
+     scanet.py
+
+
+Setting:
+
+
+ColorOut1 :
+ColorOut2 :
+ColorOut3 :
+ColorIn :
+ColorQue :
+ColorPwd :
+ColorIcon :
+Sounds :
+Proxy1 :
+Appmode :
+Locsave :
+Autosave :
+ویرایش شده
+19:45
+‌kiniteGP ‌
+scANet Network scanner for web...
+Sounds:
+
+
+Welcome sound
+Error sound
+Started prosses
+Finished prosses
