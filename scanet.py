@@ -14,8 +14,9 @@ elif menuVar == '3':
     pass
 elif menuVar == '4':
     pass
-elif menuVar == '5':
-    pass
+elif menuVar == 'Q' or menuVar == 'q':
+    
+    exit()
 elif menuVar == '0':
     system('cls')
     banner.banner()
