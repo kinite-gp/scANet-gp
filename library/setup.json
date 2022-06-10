@@ -1,0 +1,7 @@
+{
+    "sounds" : "on",
+    "proxy1" : "https://10.131.26.138:8080",
+    "appmode" : "app",
+    "locsave" : "C:\\Users\\your user\\Desktop",
+    "autosave" : "on"
+}

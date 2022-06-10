@@ -2,8 +2,11 @@ from os import system
 from time import sleep
 from subprocess import Popen
 from tabulate import tabulate
+from library import sound
 
 def banner():
+    system('cls')
+    sound.welcome()
     print(
         """
                        d8888888b    888        888    

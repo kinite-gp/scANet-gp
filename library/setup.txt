@@ -1,5 +1,0 @@
-True
-https://10.131.26.138:8080
-app
-C:\Users\your user\Desktop
-True
