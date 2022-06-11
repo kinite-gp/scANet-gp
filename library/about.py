@@ -1,4 +1,5 @@
 from library import banner
+from library import tinput,tinput
 import pyperclip
 
 def about():
@@ -19,6 +20,6 @@ def about():
                    press a key...
     """)  
     pyperclip.copy('https://github.com/kinite-gp')
-    input()
+    tinput.tinput('Home\\About','')
 
 

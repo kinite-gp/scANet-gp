@@ -1,7 +1,8 @@
 {
-    "sounds" : "on",
-    "proxy1" : "https://10.131.26.138:8080",
-    "appmode" : "app",
+    "sounds" : "off",
+    "proxy" : "off",
+    "proxylink" : "https://10.131.26.138:8080",
+    "appmode" : "cli",
     "locsave" : "C:\\Users\\your user\\Desktop",
     "autosave" : "on"
 }

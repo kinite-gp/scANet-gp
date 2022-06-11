@@ -1,5 +1,5 @@
-from library import banner
+from library import banner,tinput
 def help():
     banner.banner()
     print("""This is a simple help.""")
-    input()
+    tinput.tinput('Home\\Help','')

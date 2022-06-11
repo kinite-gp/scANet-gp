@@ -1,10 +1,8 @@
 from library import check,banner,tinput,sound,about,help
-from os import system
 
 check.dependency()
 
 while True:
-    banner.banner()
     banner.menu()
     menuVar = tinput.tinput('Home','Choose> ')
 

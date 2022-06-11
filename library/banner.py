@@ -1,11 +1,14 @@
 from os import system
-from time import sleep
-from subprocess import Popen
-from tabulate import tabulate
-from library import sound
+from library import sound,setup
+
+dict = setup.get_date_json()
+var = dict['appmode']
 
 def banner():
-    system('cls')
+    if var == 'app':
+        system('cls')
+    elif var == 'cli':
+        pass
     sound.welcome()
     print(
         """
@@ -21,18 +24,21 @@ def banner():
     )
 
 def menu():
+    banner()
     print(
         """
         1 ------------------------ Start scANet
         2 ------------------------- Get proxys
         3 ---------------------------- Help
         4 --------------------------- About!
+        5 -------------------------- Setting!
 
         Q ---------------------------- Quit
         """
     )
 
 def setting():
+    banner()
     print(
         """
         1 --------------------------- Sounds

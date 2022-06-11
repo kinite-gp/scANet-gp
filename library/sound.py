@@ -7,35 +7,36 @@ var = dict['sounds']
 def error():
     if var == 'on':
         playsound('library\\sounds\\error.wav')
-    else:
+    elif var == 'off':
         pass
 def disconnect():
     if var == 'on':
         playsound('library\\sounds\\disconnect.wav')
-    else:
+    elif var == 'off':
         pass
 def finish():
     if var == 'on':
         playsound('library\\sounds\\finish.wav')
-    else:
+    elif var == 'off':
         pass
+
 def start():
     if var == 'on':
         playsound('library\\sounds\\start.wav')
-    else:
+    elif var == 'off':
         pass
 def welcome():
     if var == 'on':
         playsound('library\\sounds\\welcome.wav')
-    else:
+    elif var == 'off':
         pass
 def exit():
     if var == 'on':
         playsound('library\\sounds\\exit.wav')
-    else:
+    elif var == 'off':
         pass
 def recycle():
     if var == 'on':
         playsound('library\\sounds\\recycle.wav')
-    else:
+    elif var == 'off':
         pass
