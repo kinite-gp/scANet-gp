@@ -1,4 +1,5 @@
-from library import check,banner,tinput,sound,about,help
+from ast import Pass
+from library import check,banner,tinput,sound,about,help,startscan
 
 check.dependency()
 
@@ -7,13 +8,22 @@ while True:
     menuVar = tinput.tinput('Home','Choose> ')
 
     if menuVar == '1':
-        pass
+        startscan.scanrun()
     elif menuVar == '2':
-        pass
-    elif menuVar == '3':
         help.help()
-    elif menuVar == '4':
+    elif menuVar == '3':
         about.about()
+    elif menuVar == '4':
+        banner.setting()
+        menuVar2 = tinput.tinput('Setting','Choose> ')
+        if menuVar2 == '1':
+            pass
+        elif menuVar2 == "b" or menuVar2 == "B":
+            pass
+        elif menuVar == 'Q' or menuVar == 'q':
+            sound.exit()
+            exit()
+
     elif menuVar == 'Q' or menuVar == 'q':
         sound.exit()
         exit()

@@ -5,11 +5,6 @@ dict = setup.get_date_json()
 autsave = dict['autosave']
 locsave = dict['locsave'] 
 
-def writelog(text):
-    file = open('logs\\logs.txt','a')
-    file.write(f'{text}\n')
-    file.close()
-
 def autosave(target,text):
     if autsave != 'no' or autsave != 'No' or autsave != 'NO': 
         file = open(f'logs\\autosave\\{target}','a')
