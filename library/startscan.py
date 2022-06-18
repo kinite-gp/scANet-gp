@@ -1,18 +1,15 @@
-from xml import dom
-from library import getwhois,portscanner,register,tinput,log,sound
+from library import getwhois,register,module
 
-def scanrun():
-    domin = tinput.tinput('Start scANet','whats is domin : ')
+def whoisrun():
+    domin = module.tinput('Start scANet whois','whats is domin : ')
     reg = register.registred(domin)
     if reg == True:
-        sound.start()
-        log.log('start scanet procces')
-        getwhois.getwhois(domin)
-        portscanner.scaner(domin)
-
+        module.start()
+        module.log('start scanet procces')
+        getwhois.whoisdomin(domin)
     else:
-        sound.error()
-        log.log('scanet error')
+        module.error()
+        module.log('scanet error')
 
-    sound.finish()
-    log.log('finish scanet')
+    module.finish()
+    module.log('finish scanet')

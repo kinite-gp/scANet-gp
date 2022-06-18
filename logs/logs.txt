@@ -1,0 +1,2 @@
+2022/06/14 09:33:31 >> domin is found
+2022/06/14 09:33:36 >> start scanet procces

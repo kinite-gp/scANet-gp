@@ -1,5 +1,5 @@
 import requests
-from library import log
+from library import module
 
 
 def registred(domain):
@@ -7,16 +7,16 @@ def registred(domain):
     response = response.status_code
     try:
         if response == 200:
-            log.log('domin is found')
+            module.log('domin is found')
             return True
         elif response == 404:
-            log.log('domin is not found')
+            module.log('domin is not found')
             return False
         else:
             print(response)
     except requests.exceptions.ConnectionError:
-        log.log('not Connect')
+        module.log('not Connect')
         return False
     except requests.exceptions.MissingSchema:
-        log.log('"http://" not found')
+        module.log('"http://" not found')
         return False

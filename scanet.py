@@ -1,31 +1,41 @@
-from ast import Pass
-from library import check,banner,tinput,sound,about,help,startscan
-
-check.dependency()
+def dependency():
+    try:
+        from datetime import datetime
+        import json
+        from playsound import playsound
+    except ImportError:
+        exit('please install library "pip install requirments.txt"')
+dependency()
+from library import module,appmodule,startscan
 
 while True:
-    banner.menu()
-    menuVar = tinput.tinput('Home','Choose> ')
+    appmodule.menu()
+    menuVar = module.tinput('Home','Choose> ')
 
     if menuVar == '1':
-        startscan.scanrun()
+        startscan.whoisrun()
     elif menuVar == '2':
-        help.help()
+        pass # port scanner
     elif menuVar == '3':
-        about.about()
+        appmodule.help()
     elif menuVar == '4':
-        banner.setting()
-        menuVar2 = tinput.tinput('Setting','Choose> ')
+        appmodule.about()
+    elif menuVar == '5':
+        appmodule.setting()
+        menuVar2 = module.tinput('Setting','Choose> ')
         if menuVar2 == '1':
-            pass
+            appmodule.banner()
+            loging = open('logs\\logs.txt','r')
+            print(loging)
+            module.tinput()
         elif menuVar2 == "b" or menuVar2 == "B":
             pass
         elif menuVar == 'Q' or menuVar == 'q':
-            sound.exit()
+            module.exit()
             exit()
 
     elif menuVar == 'Q' or menuVar == 'q':
-        sound.exit()
+        module.exit()
         exit()
 
     
